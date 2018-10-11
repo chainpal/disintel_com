@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="48px" viewBox="0 0 53 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>footer-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer-logo" fill-rule="nonzero" fill="#E1E1E0">
+            <path d="M40.815,48 L12.318,48 L12.318,34.54 L16.197,34.54 L16.197,44.44 L40.846,44.44 C47.196,44.44 49.037,42.907 49.048,37.61 C49.038,32.257 47.275,30.79 40.846,30.784 L0,30.784 L0,27.224 L40.815,27.224 C47.699,27.228 52.288,28.995 52.298,37.612 C52.291,43.846 50.334,48 40.815,48" id="Fill-1"></path>
+            <path d="M52.299,10.389 C52.288,19.005 47.699,20.772 40.816,20.776 L0,20.776 L0,17.215 L40.846,17.215 C47.274,17.208 49.037,15.742 49.048,10.389 C49.037,5.091 47.197,3.56 40.846,3.56 L16.197,3.56 L16.197,13.461 L12.318,13.461 L12.318,0 L40.815,0 C50.334,0 52.29,4.152 52.299,10.389" id="Fill-4"></path>
+        </g>
+    </g>
+</svg>
