@@ -1,5 +1,5 @@
 $(document).ready(function(e){
-    setInterval(function(){$(".bx-next").click()},3000)
+    setInterval(function(){$(".bx-next").click()},6000)
     // if ($(this).scrollTop() < 500 && screen.width > 768) {
     //     $("#footer").hide();
     // }

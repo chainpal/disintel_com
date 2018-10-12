@@ -12723,7 +12723,7 @@ footer#footer.displayed {
   .index-slider-wrap .square-heading-bg-7,
   .index-slider-wrap .square-heading-bg-8 {
     cursor: pointer;
-    background-image: url("../images/slider2.jpg");
+    background-image: url("../images/a.png");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -12744,11 +12744,11 @@ footer#footer.displayed {
     background-image: url("../images/roadshow_europe.jpg");
     background-position: bottom center; }
   .index-slider-wrap .square-heading-bg-6 {
-    background-image: url("../images/slider1.jpg"); }
+    background-image: url("../images/a.png"); }
   .index-slider-wrap .square-heading-bg-7 {
-    background-image: url("../images/slider2.jpg"); }
+    background-image: url("../images/a.png"); }
   .index-slider-wrap .square-heading-bg-8 {
-    background-image: url("../images/slider3.jpg"); }
+    background-image: url("../images/a.png"); }
   .index-slider-wrap .square-heading-3 {
     font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-weight: 400;
