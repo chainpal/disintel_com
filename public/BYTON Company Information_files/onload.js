@@ -764,6 +764,17 @@ $(".bio-wrapper .close").click(function(){
     var overMenu = false;
     var overTrigger = false;
     var index = 0;
+
+    $(".menu-2-3").hover(function(e){
+        $('.navbar-nav .products').each(function () {
+            if(e.target.innerHTML == $(this).text()){
+                index = $('.navbar-nav .products').index($(this));
+                $('.product-menu .sub-pages').hide();
+                $('.product-menu .sub-pages').eq(index).show();
+            }
+
+        })
+    })
     $('.products,div.submenu h3').hover(function (e) {
             $('header').addClass('product-menu-active-lg');
             $('header').removeClass('product-menu-left');
@@ -778,9 +789,13 @@ $(".bio-wrapper .close").click(function(){
             })
         },
         function () {
+            // action=setTimeout(function(){
+            // }
+
             overTrigger = false;
             checkHideMenu();
             // $('.product-menu .sub-pages').hide();
+            // window.clearTimeout(action);
         });
 
     $('div.submenu h3').hover(function () {

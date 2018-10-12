@@ -1506,7 +1506,7 @@ header {
     header a#logo img {
       float: left; }
   header .logo {
-    width: 175px;
+    width: 300px;
     height: 44px;
     background: url(/img/header-white-logo.svg) no-repeat;
     background-size: cover; }
@@ -1615,7 +1615,7 @@ header {
     content: '';
     border-bottom: 1px solid #7A7977 !important; }
   .header-bg .logo {
-    background: url("/img/header-logo-dark.svg") no-repeat; }
+    background: url("./biaoti.png") no-repeat; }
 
 .header-90 {
   height: 44px !important; }
@@ -3772,7 +3772,7 @@ div.video-wrapper {
     .concept-header.white a.sign-up {
       border: 1px solid #7a7977 !important; }
     .concept-header.white .logo {
-      background: url("/img/header-logo-dark.svg") no-repeat; }
+      background: url("/biaoti.png") no-repeat; }
   .concept-header.inivisible {
     opacity: 0;
     visibility: hidden; }

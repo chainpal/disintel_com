@@ -5,7 +5,7 @@
 <head>
     <!-- domain: com language: en page: k-byte-concept --> 
 
-<title>BYTON K-Byte Concept</title>
+<title>Chainpal K-Byte Concept</title>
 <meta property="og:title" content="BYTON K-Byte Concept" />
 <meta name="description" content="With BYTON K-Byte Concept, autonomous driving becomes a natural part of your life. Safer and smarter, it is a vehicle for enjoying your time on the move." />
 <meta property="og:description" content="With BYTON K-Byte Concept, autonomous driving becomes a natural part of your life. Safer and smarter, it is a vehicle for enjoying your time on the move." /> 
@@ -23,7 +23,7 @@
 <meta name="version" content="1.2.2" />
 <meta name="baidu-site-verification" content="Afh9PZYTcz" />
 
-<link rel="shortcut icon" type="image/png" href="/img/byton-favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="./static/images/llgg.png" />
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
 <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png" />
 <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon.png" />
@@ -43,58 +43,58 @@
 
 window.SITE = {domain: "com", language: "en"};
 
-window.addEventListener("load", function () {
-    // fix for cookie window becoming "floating" on mobile devices
-    window.cookieconsent.utils.isMobile = function() { return false };
-    // initialise cookie consent choice
-    window.cookieconsent.initialise({
-        "type": "opt-out",
-        "position": "bottom",
-        "revokable": false,
-        "content": {
-            "dismiss": "ACCEPT",
-            "deny": "DECLINE"
-        },
-        "elements": {
-            "header": '<span class="cc-header">{{header}}</span>&nbsp;',
-            "messagelink":
-            '<div>' +
-                '<p id="cookieconsent:desc" class="cc-message">This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To find out more about the cookies we use, see our <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="data-privacy" target="_blank">Privacy Policy.</a></p>' +
-                '<p id="cookieconsent:desc2" class="cc-message">If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.</p>' +
-            '</div>',
-            "dismiss": '<a aria-label="accept cookie message" tabindex="0" class="box foo cc-btn cc-dismiss">{{dismiss}}</a>',
-            "deny": '<a aria-label="deny cookies" tabindex="0" class="box foo cc-btn cc-deny">{{deny}}</a>',
-        },
-        "compliance": {
-            'opt-out': '<div class="cc-custom-compliance">{{dismiss}}{{deny}}</div>',
-        },
-        onInitialise: function (status) {
-            if (this.hasConsented()) {
-                // enable cookies
-                initialiseTracking();
-            }
-            else {
-                // disable cookies
-                console.log("tracking disabled");
-            }
-        },
-
-        onStatusChange: function (status, chosenBefore) {
-            if (this.hasConsented()) {
-                // enable cookies
-                initialiseTracking();
-            }
-            else {
-                // disable cookies
-                console.log("tracking disabled");
-            }
-        },
-
-        onRevokeChoice: function () {
-            window.location.reload();
-        },
-    })
-});
+//window.addEventListener("load", function () {
+//    // fix for cookie window becoming "floating" on mobile devices
+//    window.cookieconsent.utils.isMobile = function() { return false };
+//    // initialise cookie consent choice
+//    window.cookieconsent.initialise({
+//        "type": "opt-out",
+//        "position": "bottom",
+//        "revokable": false,
+//        "content": {
+//            "dismiss": "ACCEPT",
+//            "deny": "DECLINE"
+//        },
+////        "elements": {
+////            "header": '<span class="cc-header">{{header}}</span>&nbsp;',
+////            "messagelink":
+////            '<div>' +
+////                '<p id="cookieconsent:desc" class="cc-message">This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To find out more about the cookies we use, see our <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="data-privacy" target="_blank">Privacy Policy.</a></p>' +
+////                '<p id="cookieconsent:desc2" class="cc-message">If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.</p>' +
+////            '</div>',
+////            "dismiss": '<a aria-label="accept cookie message" tabindex="0" class="box foo cc-btn cc-dismiss">{{dismiss}}</a>',
+////            "deny": '<a aria-label="deny cookies" tabindex="0" class="box foo cc-btn cc-deny">{{deny}}</a>',
+////        },
+//        "compliance": {
+//            'opt-out': '<div class="cc-custom-compliance">{{dismiss}}{{deny}}</div>',
+//        },
+//        onInitialise: function (status) {
+//            if (this.hasConsented()) {
+//                // enable cookies
+//                initialiseTracking();
+//            }
+//            else {
+//                // disable cookies
+//                console.log("tracking disabled");
+//            }
+//        },
+//
+//        onStatusChange: function (status, chosenBefore) {
+//            if (this.hasConsented()) {
+//                // enable cookies
+//                initialiseTracking();
+//            }
+//            else {
+//                // disable cookies
+//                console.log("tracking disabled");
+//            }
+//        },
+//
+//        onRevokeChoice: function () {
+//            window.location.reload();
+//        },
+//    })
+//});
 
 function initialiseTracking() {
     console.log("initialising tracking");
@@ -147,7 +147,7 @@ function initialiseTracking() {
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar bottom-bar"></span>
                     </button>
-                    <a href="index.php" class="navbar-brand logo">
+                    <a href="index.html" class="navbar-brand logo" style="background-size:238px 42px;">
                     </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
@@ -164,13 +164,13 @@ function initialiseTracking() {
                                 </a>
                             </li>
                             <li>
-                                <a class="" href="index.html">首页</a>
+                                <a class=" " href="index.html">首页</a>
                             </li>
                             <li>
-                                <a class="products current" href="moments.php">技术产品</a>
+                                <a class="products" href="">技术产品</a>
                             </li>
                             <li>
-                                <a class="" href="xingdong.html">行业方案</a>
+                                <a class="products" href="./xingdong.html">行业方案</a>
                             </li>
                             <li>
                                 <a class="" href="careers.php">动态</a>
@@ -179,10 +179,10 @@ function initialiseTracking() {
                                 <a class="" href="careers.php">关于</a>
                             </li>
                         </ul>
-                        <div class="right-nav">
-                            <a href="experience.php#byton-app" class="sign-up-btn reserve box foo" data-toggle="collapse" data-target="#navbar">Keep in touch</a>
-                            <a href="reserve.php" class="reserve box foo">Reserve your BYTON</a>
-                        </div>
+                        <!--<div class="right-nav">-->
+                            <!--<a href="experience.php#byton-app" class="sign-up-btn reserve box foo" data-toggle="collapse" data-target="#navbar">Keep in touch</a>-->
+                            <!--<a href="reserve.php" class="reserve box foo">Reserve your BYTON</a>-->
+                        <!--</div>-->
                     </div>
                 </div>
                 <!--/.nav-collapse -->
@@ -418,7 +418,7 @@ function initialiseTracking() {
         <div class="row">
             <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 footer-logo">
                 <a href="index.php" class="pull-left">
-                    <img src="picture/footer-logo.svg" alt="Logo">
+                    <img src="images/llgg.png" alt="Logo">
                 </a>
             </div>
             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 right-nav">

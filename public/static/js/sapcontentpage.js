@@ -631,6 +631,7 @@
                     e.preventDefault();
                 }
                 R.Result.sendSubmit(B);
+
             },
             collectAnswer: function(b, o) {
                 var a;

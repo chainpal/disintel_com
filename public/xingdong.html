@@ -12,7 +12,7 @@
     </style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style><style class="vjs-styles-dimensions"></style>
     <!-- domain: com language: en page: moments --> 
 
-<title>BYTON Moments</title>
+<title>Chainpal Moments</title>
 <meta property="og:title" content="BYTON Moments">
 <meta name="description" content="Follow the BYTON Story and discover all our events, milestones and stories.">
 <meta property="og:description" content="Follow the BYTON Story and discover all our events, milestones and stories."> 
@@ -29,8 +29,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 <meta name="version" content="1.2.2">
 <meta name="baidu-site-verification" content="Afh9PZYTcz">
-
-<link rel="shortcut icon" type="image/png" href="https://www.byton.com/img/byton-favicon.png">
+    <link rel="shortcut icon" type="image/png" href="./images/llgg.png" />
 <link rel="apple-touch-icon" href="https://www.byton.com/img/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="76x76" href="https://www.byton.com/img/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="120x120" href="https://www.byton.com/img/apple-touch-icon.png">
@@ -50,58 +49,58 @@
 
 window.SITE = {domain: "com", language: "en"};
 
-window.addEventListener("load", function () {
-    // fix for cookie window becoming "floating" on mobile devices
-    window.cookieconsent.utils.isMobile = function() { return false };
-    // initialise cookie consent choice
-    window.cookieconsent.initialise({
-        "type": "opt-out",
-        "position": "bottom",
-        "revokable": false,
-        "content": {
-            "dismiss": "ACCEPT",
-            "deny": "DECLINE"
-        },
-        "elements": {
-            "header": '<span class="cc-header">{{header}}</span>&nbsp;',
-            "messagelink":
-            '<div>' +
-                '<p id="cookieconsent:desc" class="cc-message">This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To find out more about the cookies we use, see our <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="data-privacy" target="_blank">Privacy Policy.</a></p>' +
-                '<p id="cookieconsent:desc2" class="cc-message">If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.</p>' +
-            '</div>',
-            "dismiss": '<a aria-label="accept cookie message" tabindex="0" class="box foo cc-btn cc-dismiss">{{dismiss}}</a>',
-            "deny": '<a aria-label="deny cookies" tabindex="0" class="box foo cc-btn cc-deny">{{deny}}</a>',
-        },
-        "compliance": {
-            'opt-out': '<div class="cc-custom-compliance">{{dismiss}}{{deny}}</div>',
-        },
-        onInitialise: function (status) {
-            if (this.hasConsented()) {
-                // enable cookies
-                initialiseTracking();
-            }
-            else {
-                // disable cookies
-                console.log("tracking disabled");
-            }
-        },
-
-        onStatusChange: function (status, chosenBefore) {
-            if (this.hasConsented()) {
-                // enable cookies
-                initialiseTracking();
-            }
-            else {
-                // disable cookies
-                console.log("tracking disabled");
-            }
-        },
-
-        onRevokeChoice: function () {
-            window.location.reload();
-        },
-    })
-});
+//window.addEventListener("load", function () {
+//    // fix for cookie window becoming "floating" on mobile devices
+//    window.cookieconsent.utils.isMobile = function() { return false };
+//    // initialise cookie consent choice
+//    window.cookieconsent.initialise({
+//        "type": "opt-out",
+//        "position": "bottom",
+//        "revokable": false,
+//        "content": {
+//            "dismiss": "ACCEPT",
+//            "deny": "DECLINE"
+//        },
+//        "elements": {
+//            "header": '<span class="cc-header">{{header}}</span>&nbsp;',
+//            "messagelink":
+//            '<div>' +
+//                '<p id="cookieconsent:desc" class="cc-message">This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To find out more about the cookies we use, see our <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="data-privacy" target="_blank">Privacy Policy.</a></p>' +
+//                '<p id="cookieconsent:desc2" class="cc-message">If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.</p>' +
+//            '</div>',
+//            "dismiss": '<a aria-label="accept cookie message" tabindex="0" class="box foo cc-btn cc-dismiss">{{dismiss}}</a>',
+//            "deny": '<a aria-label="deny cookies" tabindex="0" class="box foo cc-btn cc-deny">{{deny}}</a>',
+//        },
+//        "compliance": {
+//            'opt-out': '<div class="cc-custom-compliance">{{dismiss}}{{deny}}</div>',
+//        },
+//        onInitialise: function (status) {
+//            if (this.hasConsented()) {
+//                // enable cookies
+//                initialiseTracking();
+//            }
+//            else {
+//                // disable cookies
+//                console.log("tracking disabled");
+//            }
+//        },
+//
+//        onStatusChange: function (status, chosenBefore) {
+//            if (this.hasConsented()) {
+//                // enable cookies
+//                initialiseTracking();
+//            }
+//            else {
+//                // disable cookies
+//                console.log("tracking disabled");
+//            }
+//        },
+//
+//        onRevokeChoice: function () {
+//            window.location.reload();
+//        },
+//    })
+//});
 
 function initialiseTracking() {
     console.log("initialising tracking");
@@ -153,7 +152,7 @@ function initialiseTracking() {
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar bottom-bar"></span>
                     </button>
-                    <a href="https://www.byton.com/index.php" class="navbar-brand logo">
+                    <a href="index.html" class="navbar-brand logo" style="background-size:238px 42px;">
                     </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
@@ -176,7 +175,7 @@ function initialiseTracking() {
                                 <a class="products" href="moments.php">技术产品</a>
                             </li>
                             <li>
-                                <a class="products" href="xingdong.html">行动方案</a>
+                                <a class="products" href="xingdong.html">行业方案</a>
                             </li>
                             <li>
                                 <a class="" href="careers.php">动态</a>
@@ -185,10 +184,10 @@ function initialiseTracking() {
                                 <a class="" href="careers.php">关于</a>
                             </li>
                         </ul>
-                        <div class="right-nav">
-                            <a href="https://www.byton.com/experience.php#byton-app" class="sign-up-btn reserve box foo" data-toggle="collapse" data-target="#navbar">Keep in touch</a>
-                            <a href="https://www.byton.com/reserve.php" class="reserve box foo">Reserve your BYTON</a>
-                        </div>
+                        <!--<div class="right-nav">-->
+                            <!--<a href="https://www.byton.com/experience.php#byton-app" class="sign-up-btn reserve box foo" data-toggle="collapse" data-target="#navbar">Keep in touch</a>-->
+                            <!--<a href="https://www.byton.com/reserve.php" class="reserve box foo">Reserve your BYTON</a>-->
+                        <!--</div>-->
                     </div>
                 </div>
                 <!--/.nav-collapse -->
@@ -1241,7 +1240,7 @@ function initialiseTracking() {
         <div class="row">
             <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 footer-logo">
                 <a href="index.php" class="pull-left">
-                    <img src="static/picture/footer-logo.svg" alt="Logo">
+                    <img src="./BYTON Company Information_files/Chainpal.png" alt="Logo" style="width:100px; height:100px">
                 </a>
             </div>
             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 right-nav">
@@ -1259,16 +1258,12 @@ function initialiseTracking() {
                             <li>
                                 <ul class="sub-list">
                                     <li id="santa-clara">开发者平台
-                                        <span>--:-- am</span>
                                     </li>
                                     <li id="los-angeles">监控平台
-                                        <span>--:-- am</span>
                                     </li>
                                     <li id="munich">引用研发平台
-                                        <span>--:-- am</span>
                                     </li>
                                     <li id="hong-kong">合约安全服务平台
-                                        <span>--:-- am</span>
                                     </li>
                                 </ul>
                             </li>
@@ -1277,7 +1272,7 @@ function initialiseTracking() {
                 </div>
                 <div class="mobile-title col-sm-12 col-xs-12 visible-sm visible-xs">
                     <div class="row">
-                        <h5>行动方案</h5>
+                        <h5>行业方案</h5>
                         <button type="button" class="open-btn" data-toggle="collapse" data-target="#email-wrap">+
                         </button>
                     </div>
@@ -1285,7 +1280,7 @@ function initialiseTracking() {
                 <div id="email-wrap" class="collapse wrapper col-lg-2 col-md-3 col-sm-12 col-xs-12 ">
                     <div class="row">
                         <ul class="email">
-                            <li class="title">行动方案</li>
+                            <li class="title">行业方案</li>
                             <li>
                                 <ul class="sub-list">
                                     <li>
@@ -1339,7 +1334,7 @@ function initialiseTracking() {
                                     </li>
                                     <li>
                                         <a href="http://www.linkedin.com/company/10878585/" target="_blank">
-                                            <i class="">关于趣链</i>
+                                            <i class="">关于Chainpal</i>
                                         </a>
                                     </li>
                                     <li>
@@ -1406,37 +1401,12 @@ function initialiseTracking() {
                 </div>
             </div>
             <div id="language-wrap" class="collapse wrapper col-lg-2 col-md-3 col-sm-12 col-xs-12 mobile-lang-bar">
-                <div class="row row-mobile">
-                    <ul>
-                        <li>
-                            <a href="/" class="active">English</a>
-                        </li>
-                        <li>
-                            <a href="/cn/">中文</a>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
-            <div class="language-bar col-md-offset-2 col-md-4 hidden-xs hidden-sm">
-                <div class="row">
-                    <ul>
-                        <li class="title">
-                            <span>Languages</span>
-                        </li>
-                        <li>
-                            <a href="/" class="active">English</a>
-                        </li>
-                        <li>
-                            <a href="/cn/">中文</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="byton-copyrights">
-                <a href="data-privacy.php">Data Privacy</a>
-                <a href="terms.php">Terms</a>
-                <span> © BYTON 2018</span>
-            </div>
+            <div class="byton-copyrights" style="padding-right:28%">
+            <span>Copyright  2018 Beijing Fenbuzhihui Technology Co., Ltd. All rights reserved.</span>
+        </div>
+
         </div>
     </div>
 </footer>  <!-- Image share modal -->
@@ -1445,7 +1415,7 @@ function initialiseTracking() {
         <!-- Modal content-->
         <div class="modal-content">
             <a href="https://www.byton.com/" class="logo">
-                <img src="./BYTON Company Information_files/signup-b-symbol.svg">
+                <img src="./BYTON Company Information_files/llgg.png">
             </a>
             <p class="share-message">SHARE THE IMAGE</p>
             <div class="h-line"></div>

@@ -1,5 +1,5 @@
 $(document).ready(function(e){
-
+    setInterval(function(){$(".bx-next").click()},3000)
     // if ($(this).scrollTop() < 500 && screen.width > 768) {
     //     $("#footer").hide();
     // }
@@ -310,7 +310,6 @@ $(document).ready(function(e){
     setTimeout(function() {
         $('.white-wrapper').css("display",'none')
     }, 1000);
-
     /* Concept Page
      ================================================================ */
 
@@ -777,7 +776,6 @@ $(".bio-wrapper .close").click(function(){
 
         })
     })
-    var action = null;
     $('.products,div.submenu h3').hover(function (e) {
             $('header').addClass('product-menu-active-lg');
             $('header').removeClass('product-menu-left');
@@ -800,7 +798,6 @@ $(".bio-wrapper .close").click(function(){
             // $('.product-menu .sub-pages').hide();
             // window.clearTimeout(action);
         });
-
     $('div.submenu h3').hover(function () {
             $('header').addClass('product-menu-left');
         });

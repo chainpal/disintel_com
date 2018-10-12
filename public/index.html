@@ -5,7 +5,7 @@
 <head>
     <!-- domain: com language: en page:  --> 
 
-<title>BYTON</title>
+<title>Chainpal</title>
 <meta property="og:title" content="BYTON" />
 <meta name="description" content="It is not about refining cars. It is about refining life. We will transform cars and traffic into places of well-being for you to make every single minute count, even on the move." />
 <meta property="og:description" content="It is not about refining cars. It is about refining life. We will transform cars and traffic into places of well-being for you to make every single minute count, even on the move." /> 
@@ -23,7 +23,7 @@
 <meta name="version" content="1.2.2" />
 <meta name="baidu-site-verification" content="Afh9PZYTcz" />
 
-<link rel="shortcut icon" type="image/png" href="/img/byton-favicon.png" />
+<link rel="shortcut icon" type="image/png" href="./static/images/llgg.png" />
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
 <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png" />
 <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon.png" />
@@ -43,58 +43,58 @@
 
 window.SITE = {domain: "com", language: "en"};
 
-window.addEventListener("load", function () {
-    // fix for cookie window becoming "floating" on mobile devices
-    window.cookieconsent.utils.isMobile = function() { return false };
-    // initialise cookie consent choice
-    window.cookieconsent.initialise({
-        "type": "opt-out",
-        "position": "bottom",
-        "revokable": false,
-        "content": {
-            "dismiss": "ACCEPT",
-            "deny": "DECLINE"
-        },
-        "elements": {
-            "header": '<span class="cc-header">{{header}}</span>&nbsp;',
-            "messagelink":
-            '<div>' +
-                '<p id="cookieconsent:desc" class="cc-message">This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To find out more about the cookies we use, see our <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="data-privacy" target="_blank">Privacy Policy.</a></p>' +
-                '<p id="cookieconsent:desc2" class="cc-message">If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.</p>' +
-            '</div>',
-            "dismiss": '<a aria-label="accept cookie message" tabindex="0" class="box foo cc-btn cc-dismiss">{{dismiss}}</a>',
-            "deny": '<a aria-label="deny cookies" tabindex="0" class="box foo cc-btn cc-deny">{{deny}}</a>',
-        },
-        "compliance": {
-            'opt-out': '<div class="cc-custom-compliance">{{dismiss}}{{deny}}</div>',
-        },
-        onInitialise: function (status) {
-            if (this.hasConsented()) {
-                // enable cookies
-                initialiseTracking();
-            }
-            else {
-                // disable cookies
-                console.log("tracking disabled");
-            }
-        },
-
-        onStatusChange: function (status, chosenBefore) {
-            if (this.hasConsented()) {
-                // enable cookies
-                initialiseTracking();
-            }
-            else {
-                // disable cookies
-                console.log("tracking disabled");
-            }
-        },
-
-        onRevokeChoice: function () {
-            window.location.reload();
-        },
-    })
-});
+//window.addEventListener("load", function () {
+//    // fix for cookie window becoming "floating" on mobile devices
+//    window.cookieconsent.utils.isMobile = function() { return false };
+//    // initialise cookie consent choice
+//    window.cookieconsent.initialise({
+//        "type": "opt-out",
+//        "position": "bottom",
+//        "revokable": false,
+//        "content": {
+//            "dismiss": "ACCEPT",
+//            "deny": "DECLINE"
+//        },
+//        "elements": {
+//            "header": '<span class="cc-header">{{header}}</span>&nbsp;',
+//            "messagelink":
+//            '<div>' +
+//                '<p id="cookieconsent:desc" class="cc-message">This website stores cookies on your computer. These cookies are used to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To find out more about the cookies we use, see our <a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="data-privacy" target="_blank">Privacy Policy.</a></p>' +
+//                '<p id="cookieconsent:desc2" class="cc-message">If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.</p>' +
+//            '</div>',
+//            "dismiss": '<a aria-label="accept cookie message" tabindex="0" class="box foo cc-btn cc-dismiss">{{dismiss}}</a>',
+//            "deny": '<a aria-label="deny cookies" tabindex="0" class="box foo cc-btn cc-deny">{{deny}}</a>',
+//        },
+//        "compliance": {
+//            'opt-out': '<div class="cc-custom-compliance">{{dismiss}}{{deny}}</div>',
+//        },
+//        onInitialise: function (status) {
+//            if (this.hasConsented()) {
+//                // enable cookies
+//                initialiseTracking();
+//            }
+//            else {
+//                // disable cookies
+//                console.log("tracking disabled");
+//            }
+//        },
+//
+//        onStatusChange: function (status, chosenBefore) {
+//            if (this.hasConsented()) {
+//                // enable cookies
+//                initialiseTracking();
+//            }
+//            else {
+//                // disable cookies
+//                console.log("tracking disabled");
+//            }
+//        },
+//
+//        onRevokeChoice: function () {
+//            window.location.reload();
+//        },
+//    })
+//});
 
 function initialiseTracking() {
     console.log("initialising tracking");
@@ -147,7 +147,7 @@ function initialiseTracking() {
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar bottom-bar"></span>
                     </button>
-                    <a href="index.php" class="navbar-brand logo">
+                    <a href="index.html" class="navbar-brand logo" style="background-size:238px 42px;">
                     </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
@@ -170,7 +170,7 @@ function initialiseTracking() {
                                 <a class="products" href="">技术产品</a>
                             </li>
                             <li>
-                                <a class="products" href="./xingdong.html">行动方案</a>
+                                <a class="products" href="./xingdong.html">行业方案</a>
                             </li>
                             <li>
                                 <a class="" href="careers.php">动态</a>
@@ -179,10 +179,10 @@ function initialiseTracking() {
                                 <a class="" href="careers.php">关于</a>
                             </li>
                         </ul>
-                        <div class="right-nav">
-                            <a href="experience.php#byton-app" class="sign-up-btn reserve box foo" data-toggle="collapse" data-target="#navbar">Keep in touch</a>
-                            <a href="reserve.php" class="reserve box foo">Reserve your BYTON</a>
-                        </div>
+                        <!--<div class="right-nav">-->
+                            <!--<a href="experience.php#byton-app" class="sign-up-btn reserve box foo" data-toggle="collapse" data-target="#navbar">Keep in touch</a>-->
+                            <!--<a href="reserve.php" class="reserve box foo">Reserve your BYTON</a>-->
+                        <!--</div>-->
                     </div>
                 </div>
                 <!--/.nav-collapse -->
@@ -253,45 +253,43 @@ function initialiseTracking() {
             <ul class="index-slider">
                 <li class="square-heading-bg-6 slider-index-1" style="cursor: initial">
                     <div class="index-slider-text">
-                        <h1 class="square-heading delay-1 title" data-in="fade-down" data-out="fade-out-left">BYTON K-Byte Concept</h1>
-                        <p class="mb-15 square-description delay-2 subheading" data-in="fade-down" data-out="fade-out-left">There’s no one lifestyle that fits all. <br class="hidden-sm hidden-md hidden-lg">Neither should there be just one BYTON.</p>
+                        <h1 class="square-heading delay-1 title" data-in="fade-down" data-out="fade-out-left">技术产品</h1>
+                        <p class="mb-15 square-description delay-2 subheading" data-in="fade-down" data-out="fade-out-left">国产自主可控BaaS服务提供商<br class="hidden-sm hidden-md hidden-lg"></p>
                         <button class="square-button square-button-left explore box foo delay-3 btn-text" data-in="fade-in" data-out="fade-out"
                                 onclick="location.href='k-byte-concept.php';">MORE INFORMATION</button>
-                        <button class="square-button square-button-right explore box foo delay-3 btn-text" data-in="fade-in" data-out="fade-out"
-                                onclick="location.href='moments.php#byton-k-byte';">REWATCH LIVESTREAM</button>
                     </div>
                 </li>
                 <li class="square-heading-bg-1 slider-index-2" onclick="location.href='moments.php#chinaroadshow';">
                     <div class="index-slider-text">
-                        <p class="date" data-in="fade-down" data-out="fade-out-left">August - October 2018</p>
-                        <h1 class="square-heading title" data-in="fade-down" data-out="fade-out-left">BYTON M-Byte Concept<br>China Roadshow</h1>
-                        <p class="mb-15 square-description delay-1 subheading" data-in="fade-down" data-out="fade-out-left">Chengdu | Shanghai | Shenzhen | Nanjing</p>
+                        <!--<p class="date" data-in="fade-down" data-out="fade-out-left">August - October 2018</p>-->
+                        <h1 class="square-heading title" data-in="fade-down" data-out="fade-out-left">行业方案</h1>
+                        <p class="mb-15 square-description delay-1 subheading" data-in="fade-down" data-out="fade-out-left">国产自主可控BaaS服务提供商</p>
                         <button class="square-button explore box foo delay-2 btn-text" data-in="fade-in" data-out="fade-out">MORE INFORMATION</button>
                     </div>
                 </li>
                 <li class="square-heading-bg-8 slider-index-3" onclick="location.href='co-creator.php';">
                     <div class="index-slider-text">
-                        <h1 class="square-heading delay-1 title" data-in="fade-down" data-out="fade-out-left">BYTON Co-Creation</h1>
-                        <p class="mb-15 square-description delay-2 subheading" data-in="fade-down" data-out="fade-out-left">Your ideas are our fuel.</p>
+                        <h1 class="square-heading delay-1 title" data-in="fade-down" data-out="fade-out-left">公司动态</h1>
+                        <p class="mb-15 square-description delay-2 subheading" data-in="fade-down" data-out="fade-out-left">国产自主可控BaaS服务提供商</p>
                         <button class="square-button explore box foo delay-3 btn-text" data-in="fade-in" data-out="fade-out">MORE INFORMATION</button>
                     </div>
                 </li>
-                <li class="square-heading-bg-5 slider-index-4" onclick="location.href='moments.php#roadshow';">
-                    <div class="index-slider-text">
-                        <p class="date" data-in="fade-down" data-out="fade-out-left">May - July 2018</p>
-                        <h1 class="square-heading delay-1 title" data-in="fade-down" data-out="fade-out-left">Roadshow Europe</h1>
-                        <p class="mb-15 square-description delay-2 subheading" data-in="fade-down" data-out="fade-out-left">Munich, Oslo & Amsterdam</p>
-                        <button class="square-button explore box foo delay-3 btn-text" data-in="fade-in" data-out="fade-out">MORE INFORMATION</button>
-                    </div>
-                </li>
-                <li class="square-heading-bg-2 slider-index-5" onclick="location.href='reserve.php';">
-                    <div class="index-slider-text">
-                        <h1 class="square-heading delay-1 title" data-in="fade-down" data-out="fade-out-left">Be among the first
-                            <br>to reserve your BYTON</h1>
-                        <p class="mb-15 square-description">&nbsp</p>
-                        <button class="square-button explore box foo delay-3 btn-text" data-in="fade-in" data-out="fade-out">MORE INFORMATION</button>
-                    </div>
-                </li>
+                <!--<li class="square-heading-bg-5 slider-index-4" onclick="location.href='moments.php#roadshow';">-->
+                    <!--<div class="index-slider-text">-->
+                        <!--<p class="date" data-in="fade-down" data-out="fade-out-left">May - July 2018</p>-->
+                        <!--<h1 class="square-heading delay-1 title" data-in="fade-down" data-out="fade-out-left">Roadshow Europe</h1>-->
+                        <!--<p class="mb-15 square-description delay-2 subheading" data-in="fade-down" data-out="fade-out-left">Munich, Oslo & Amsterdam</p>-->
+                        <!--<button class="square-button explore box foo delay-3 btn-text" data-in="fade-in" data-out="fade-out">MORE INFORMATION</button>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<li class="square-heading-bg-2 slider-index-5" onclick="location.href='reserve.php';">-->
+                    <!--<div class="index-slider-text">-->
+                        <!--<h1 class="square-heading delay-1 title" data-in="fade-down" data-out="fade-out-left">Be among the first-->
+                            <!--<br>to reserve your BYTON</h1>-->
+                        <!--<p class="mb-15 square-description">&nbsp</p>-->
+                        <!--<button class="square-button explore box foo delay-3 btn-text" data-in="fade-in" data-out="fade-out">MORE INFORMATION</button>-->
+                    <!--</div>-->
+                <!--</li>-->
             </ul>
         </div>
         <div class="body-content">
@@ -304,16 +302,15 @@ function initialiseTracking() {
                                     <div class="square">
                                         <div class="zoom">
                                             <div class="foreground"></div>
-                                            <img src="static/picture/tile_job1_job2.jpg" class="hidden-xs img-responsive" alt="test image one" width="640"
+                                            <img src="./images/slider4.jpg" class="hidden-xs img-responsive" alt="test image one" width="640"
                                                 height="640">
-                                            <img src="static/picture/tile_job1_job2_mobile.jpg" class="hidden-sm hidden-md hidden-lg img-responsive" alt="test image one" width="640"
+                                            <img src="./images/slider4.jpg" class="hidden-sm hidden-md hidden-lg img-responsive" alt="test image one" width="640"
                                                 height="640">
                                         </div>
                                         <div class="square-tile-center">
-                                            <h2 class="square-title">Products</h2>
-                                            <p class="square-desc">Discover the next-generation smart devices. </p>
-                                            <button class="square-button square-button-left explore box foo" onclick="location.href='m-byte-concept.php'">BYTON M-BYTE CONCEPT</button>
-                                            <button class="square-button square-button-right explore box foo" onclick="location.href='k-byte-concept.php'">BYTON K-BYTE CONCEPT</button>
+                                            <h2 class="square-title">区块链基础平台</h2>
+                                            <p class="square-desc">国产自主可控BaaS服务提供商</p>
+                                            <button class="square-button explore box foo" onclick="location.href='co-creator.php'">EXPLORE</button>
                                         </div>
                                     </div>
                                 </div>
@@ -321,12 +318,12 @@ function initialiseTracking() {
                                     <div class="square" onclick="location.href='co-creator.php'">
                                         <div class="zoom">
                                             <div class="foreground"></div>
-                                            <img src="static/picture/home-co-creator-tile-en.jpg" class="img-responsive" alt="test image one" width="640"
+                                            <img src="./images/slider9.jpg" class="img-responsive" alt="test image one" width="640"
                                                  height="640">
                                         </div>
                                         <div class="square-tile">
-                                            <h2 class="square-title">BYTON Co-Creation</h2>
-                                            <p class="square-desc">It is about jointly creating value.</p>
+                                            <h2 class="square-title">开发者平台</h2>
+                                            <p class="square-desc">国产自主可控BaaS服务提供商</p>
                                             <button class="square-button explore box foo" onclick="location.href='co-creator.php'">EXPLORE</button>
                                         </div>
                                     </div>
@@ -337,12 +334,12 @@ function initialiseTracking() {
                                     <div class="square" onclick="location.href='experience.php'">
                                         <div class="zoom">
                                             <div class="foreground"></div>
-                                            <img src="static/picture/04-tile_experience.jpg" class="img-responsive" alt="test-image-one" width="640"
+                                            <img src="./images/slider5.jpg" class="img-responsive" alt="test-image-one" width="640"
                                                  height="640">
                                         </div>
                                         <div class="square-tile">
-                                            <h2 class="square-title">Experience</h2>
-                                            <p class="square-desc">Life is a journey with experiences to enjoy. Travel it well. </p>
+                                            <h2 class="square-title">监控平台</h2>
+                                            <p class="square-desc">国产自主可控BaaS服务提供商</p>
                                             <button class="square-button explore box foo" onclick="location.href='experience.php'">EXPLORE</button>
                                         </div>
                                     </div>
@@ -351,12 +348,12 @@ function initialiseTracking() {
                                     <div class="square" onclick="location.href='k-byte-concept.php#interior_design'">
                                         <div class="zoom">
                                             <div class="foreground"></div>
-                                            <img src="static/picture/03-tile_interior_design.jpg" class="img-responsive" alt="test image two" width="640"
+                                            <img src="./images/slider6.jpg" class="img-responsive" alt="test image two" width="640"
                                                 height="480">
                                         </div>
                                         <div class="square-tile">
-                                            <h2 class="square-title">Interior Design</h2>
-                                            <p class="square-desc">Staging the digital life.</p>
+                                            <h2 class="square-title">应用研发</h2>
+                                            <p class="square-desc">国产自主可控BaaS服务提供商</p>
                                             <button class="square-button explore box foo" onclick="location.href='k-byte-concept.php#interior_design'">EXPLORE</button>
                                         </div>
                                     </div>
@@ -367,12 +364,12 @@ function initialiseTracking() {
                                     <div class="square" onclick="!isVisualiserSupported() ? location.href='k-byte-concept.php#visualizer' : $('#visualizer-modal').modal('show'); ">
                                         <div class="zoom">
                                             <div class="foreground"></div>
-                                            <img src="static/picture/tile_visualizer.jpg" class="img-responsive" alt="test-image-two" width="640"
+                                            <img src="./images/slider7.jpg" class="img-responsive" alt="test-image-two" width="640"
                                                 height="480">
                                         </div>
                                         <div class="square-tile">
-                                            <h2 class="square-title">Visualizer</h2>
-                                            <p class="square-desc">Experience BYTON now.</p>
+                                            <h2 class="square-title">合约服务</h2>
+                                            <p class="square-desc">国产自主可控BaaS服务提供商</p>
                                             <button class="square-button explore box foo" onclick="$('#visualizer-modal').modal('show');">EXPLORE</button>
                                         </div>
                                     </div>
@@ -381,11 +378,11 @@ function initialiseTracking() {
                                     <div class="square" onclick="location.href='careers.php'">
                                         <div class="zoom">
                                             <div class="foreground"></div>
-                                            <img src="static/picture/06-tile_join.jpg" class="img-responsive" alt="test-image-two" width="640" height="640">
+                                            <img src="./images/slider8.jpg" class="img-responsive" alt="test-image-two" width="640" height="640">
                                         </div>
                                         <div class="square-tile">
-                                            <h2 class="square-title">Careers</h2>
-                                            <p class="square-desc">We are looking for great talents to join our growing teams.</p>
+                                            <h2 class="square-title">工作机会</h2>
+                                            <p class="square-desc">国产自主可控BaaS服务提供商</p>
                                             <button class="square-button explore box foo" onclick="location.href='careers.php'">EXPLORE</button>
                                         </div>
                                     </div>
@@ -404,8 +401,8 @@ function initialiseTracking() {
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 footer-logo">
-                <a href="index.php" class="pull-left">
-                    <img src="static/picture/footer-logo.svg" alt="Logo">
+                <a href="index.html" class="pull-left">
+                    <img src="static/images/llgg.png" alt="Logo" style="width:100px; height:100px">
                 </a>
             </div>
             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 right-nav">
@@ -423,16 +420,12 @@ function initialiseTracking() {
                             <li>
                                 <ul class="sub-list">
                                     <li id="santa-clara">开发者平台
-                                        <span>--:-- am</span>
                                     </li>
                                     <li id="los-angeles">监控平台
-                                        <span>--:-- am</span>
                                     </li>
                                     <li id="munich">引用研发平台
-                                        <span>--:-- am</span>
                                     </li>
                                     <li id="hong-kong">合约安全服务平台
-                                        <span>--:-- am</span>
                                     </li>
                                 </ul>
                             </li>
@@ -441,7 +434,7 @@ function initialiseTracking() {
                 </div>
                 <div class="mobile-title col-sm-12 col-xs-12 visible-sm visible-xs">
                     <div class="row">
-                        <h5>行动方案</h5>
+                        <h5>行业方案</h5>
                         <button type="button" class="open-btn" data-toggle="collapse" data-target="#email-wrap">+
                         </button>
                     </div>
@@ -449,7 +442,7 @@ function initialiseTracking() {
                 <div id="email-wrap" class="collapse wrapper col-lg-2 col-md-3 col-sm-12 col-xs-12 ">
                     <div class="row">
                         <ul class="email">
-                            <li class="title">行动方案</li>
+                            <li class="title">行业方案</li>
                             <li>
                                 <ul class="sub-list">
                                     <li>
@@ -526,7 +519,7 @@ function initialiseTracking() {
                                         <a href="media-kit.php">新闻报道</a>
                                     </li>
                                     <li>
-                                        <a href="media-kit.php">关于趣链</a>
+                                        <a href="media-kit.php">关于Chainpal</a>
                                     </li>
                                     <li>
                                         <a href="media-kit.php">商业合作</a>
@@ -581,25 +574,8 @@ function initialiseTracking() {
                     </ul>
                 </div>
             </div>
-            <div class="language-bar col-md-offset-2 col-md-4 hidden-xs hidden-sm">
-                <div class="row">
-                    <ul>
-                        <li class="title">
-                            <span>Languages</span>
-                        </li>
-                        <li>
-                            <a href="/" class="active">English</a>
-                        </li>
-                        <li>
-                            <a href="/cn/">中文</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <div class="byton-copyrights">
-                <a href="data-privacy.php">Data Privacy</a>
-                <a href="terms.php">Terms</a>
-                <span> © BYTON 2018</span>
+                <span>Copyright  2018 Beijing Fenbuzhihui Technology Co., Ltd. All rights reserved.</span>
             </div>
         </div>
     </div>

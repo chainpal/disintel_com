@@ -1506,10 +1506,10 @@ header {
     header a#logo img {
       float: left; }
   header .logo {
-    width: 175px;
-    height: 44px;
-    background: url(../fonts/header-white-logo.svg) no-repeat;
-    background-size: cover; }
+    width: 300px;
+    height: 48px;
+    background: url(../images/logo.psd) no-repeat;
+    background-size: 100px 100px; }
   header .chn .navbar-nav li a {
     font-size: 13px; }
   header .chn .right-nav a.sign-up {
@@ -1615,7 +1615,8 @@ header {
     content: '';
     border-bottom: 1px solid #7A7977 !important; }
   .header-bg .logo {
-    background: url("../fonts/header-logo-dark.svg") no-repeat; }
+    background: url("../images/biaoti.png") no-repeat;
+  }
 
 .header-90 {
   height: 44px !important; }
@@ -3772,7 +3773,7 @@ div.video-wrapper {
     .concept-header.white a.sign-up {
       border: 1px solid #7a7977 !important; }
     .concept-header.white .logo {
-      background: url("../images/header-logo-dark.svg") no-repeat; }
+      background: url("../images/biaoti.png") no-repeat; }
   .concept-header.inivisible {
     opacity: 0;
     visibility: hidden; }
