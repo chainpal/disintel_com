@@ -152,15 +152,10 @@ function initialiseTracking() {
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <div class="mob-menu">
-                        <div class="mob-lang-wrapper visible-xs visible-sm">
-                            <a href="javascript:void(0)" class="active">English</a>
-                            <span>/</span>
-                            <a href="/cn/index.php">中文</a>
-                        </div>
                         <ul class="nav navbar-nav">
                             <li class="mob-symbol">
                                 <a href="index.php" class="logo-symbol">
-                                    <img src="static/picture/b-symbol.svg" alt="Main Logo">
+                                    <img src="static/images/llgg.png" alt="Main Logo">
                                 </a>
                             </li>
                             <li>
@@ -170,7 +165,7 @@ function initialiseTracking() {
                                 <a class="products" href="">技术产品</a>
                             </li>
                             <li>
-                                <a class="products" href="./xingdong.html">行业方案</a>
+                                <a class="products" href="">行业方案</a>
                             </li>
                             <li>
                                 <a class="" href="careers.php">动态</a>
@@ -199,7 +194,8 @@ function initialiseTracking() {
                         <ul style="display: none;" class="sub-pages">
                             <li class="mob-symbol">
                                 <a href="index.php" class="logo-symbol">
-                                    <img src="static/picture/b-symbol.svg" alt="Main Logo">
+                                    <!--<img src="static/picture/b-symbol.svg" alt="Main Logo">-->
+                                    <img src="./static/images/llgg.png" alt="Main Logo">
                                 </a>
                             </li>
                             <li>
@@ -224,7 +220,7 @@ function initialiseTracking() {
                         <ul style="display: none;" class="sub-pages">
                             <li class="mob-symbol">
                                 <a href="index.php" class="logo-symbol">
-                                    <img src="static/picture/b-symbol.svg" alt="Main Logo">
+                                    <img src="static/images/llgg.png" alt="Main Logo">
                                 </a>
                             </li>
                             <li>
@@ -307,7 +303,7 @@ function initialiseTracking() {
                                             <img src="static/images/a2.png" class="hidden-sm hidden-md hidden-lg img-responsive" alt="test image one" width="640"
                                                 height="640">
                                         </div>
-                                        <div class="square-tile-center">
+                                        <div class="square-tile">
                                             <h2 class="square-title">区块链基础平台</h2>
                                             <p class="square-desc">国产自主可控BaaS服务提供商</p>
                                             <button class="square-button explore box foo" onclick="location.href='byte.html'">EXPLORE</button>
@@ -451,12 +447,12 @@ function initialiseTracking() {
                                         </p>
                                         <p data-toggle="modal" data-target="#inquiryModal" class="modal-trigger" data-submodal="media-inquiry">
                                             数字凭证
-                                            <p data-toggle="modal" data-target="#inquiryModal" class="modal-trigger" data-submodal="reservation-inquiry">
-                                                供应链溯源
-                                            </p>
-                                            <p data-toggle="modal" data-target="#inquiryModal" class="modal-trigger" data-submodal="investor-inquiry">
-                                                能源资产
-                                            </p>
+                                        <p data-toggle="modal" data-target="#inquiryModal" class="modal-trigger" data-submodal="reservation-inquiry">
+                                            供应链溯源
+                                        </p>
+                                        <p data-toggle="modal" data-target="#inquiryModal" class="modal-trigger" data-submodal="investor-inquiry">
+                                            能源资产
+                                        </p>
                                     </li>
                                 </ul>
                             </li>
@@ -465,18 +461,21 @@ function initialiseTracking() {
                 </div>
                 <div class="mobile-title col-sm-12 col-xs-12 visible-sm visible-xs">
                     <div class="row">
-                        <a href="media-kit.php">相关资源</a>
-                        <i class="arrow"> > </i>
+                        <h5>相关资源</h5>
+                        <button type="button" class="open-btn" data-toggle="collapse" data-target="#esmail-wrap">+
+                        </button>
                     </div>
                 </div>
-                <div id="media-wrap" class="collapse wrapper col-lg-2 col-md-3 col-sm-12 col-xs-12 ">
+                <div id="esmail-wrap" class="collapse wrapper col-lg-2 col-md-3 col-sm-12 col-xs-12 ">
                     <div class="row">
-                        <ul class="media-kit">
+                        <ul class="email">
                             <li class="title">相关资源</li>
                             <li>
                                 <ul class="sub-list">
                                     <li>
-                                        <a href="media-kit.php">产品白皮书</a>
+                                        <p>
+                                            产品白皮书
+                                        </p>
                                     </li>
                                 </ul>
                             </li>
@@ -486,9 +485,16 @@ function initialiseTracking() {
                 <div class="mobile-title col-sm-12 col-xs-12 visible-sm visible-xs">
                     <div class="row">
                         <h5>公司</h5>
-                        <ul class="footer-socilas right">
+                        <button type="button" class="open-btn" data-toggle="collapse" data-target="#essmail-wrap">+
+                        </button>
+                    </div>
+                </div>
+                <div id="essmail-wrap" class="collapse wrapper col-lg-2 col-md-3 col-sm-12 col-xs-12 ">
+                    <div class="row">
+                        <ul class="email">
+                            <li class="title">公司</li>
                             <li>
-                                <ul class="social-icons">
+                                <ul class="sub-list">
                                     <li>
                                         <a href="http://www.facebook.com/BYTONcars/" target="_blank">
                                             <i class="">新闻报道</i>
@@ -496,7 +502,7 @@ function initialiseTracking() {
                                     </li>
                                     <li>
                                         <a href="http://www.linkedin.com/company/10878585/" target="_blank">
-                                            <i class="">关于趣链</i>
+                                            <i class="">关于Chainpal</i>
                                         </a>
                                     </li>
                                     <li>
@@ -509,70 +515,11 @@ function initialiseTracking() {
                         </ul>
                     </div>
                 </div>
-                <div id="socials-wrap" class="hidden-xs hidden-sm wrapper col-lg-2 col-md-4 col-sm-4 col-xs-12">
-                    <div class="row">
-                        <ul class="media-kit">
-                            <li class="title">公司</li>
-                            <li>
-                                <ul class="sub-list">
-                                    <li>
-                                        <a href="media-kit.php">新闻报道</a>
-                                    </li>
-                                    <li>
-                                        <a href="media-kit.php">关于Chainpal</a>
-                                    </li>
-                                    <li>
-                                        <a href="media-kit.php">商业合作</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <!--<ul class="footer-socilas">-->
-                            <!--<li class="title">公司</li>-->
-                            <!--<li>-->
-                                <!--<ul class="social-icons">-->
-                                    <!--<li>-->
-                                        <!--<a href="http://www.facebook.com/BYTONcars/" target="_blank">-->
-                                            <!--<i class="">新闻报道</i>-->
-                                        <!--</a>-->
-                                    <!--</li>-->
-                                    <!--<li>-->
-                                        <!--<a href="http://www.linkedin.com/company/10878585/" target="_blank">-->
-                                            <!--<i class="">关于趣链</i>-->
-                                        <!--</a>-->
-                                    <!--</li>-->
-                                    <!--<li>-->
-                                        <!--<a href="https://www.instagram.com/bytoncars/" target="_blank">-->
-                                            <!--<i class="">商业合作</i>-->
-                                        <!--</a>-->
-                                    <!--</li>-->
-                                <!--</ul>-->
-                            <!--</li>-->
-                        <!--</ul>-->
-                    </div>
-                </div>
             </div>
         </div>
         <div class="row">
             <hr>
             <div class="mobile-title cols-sm-12 col-xs-12 visible-sm visible-xs">
-                <div class="row">
-                    <h5>Languages</h5>
-                    <button type="button" class="open-btn" data-toggle="collapse" data-target="#language-wrap">+
-                    </button>
-                </div>
-            </div>
-            <div id="language-wrap" class="collapse wrapper col-lg-2 col-md-3 col-sm-12 col-xs-12 mobile-lang-bar">
-                <div class="row row-mobile">
-                    <ul>
-                        <li>
-                            <a href="/" class="active">English</a>
-                        </li>
-                        <li>
-                            <a href="/cn/">中文</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
             <div class="byton-copyrights">
                 <span>Copyright  2018 Beijing Fenbuzhihui Technology Co., Ltd. All rights reserved.</span>
@@ -586,7 +533,7 @@ function initialiseTracking() {
         <!-- Modal content-->
         <div class="modal-content">
             <a href="https://www.byton.com/" class="logo">
-                <img src="static/picture/signup-b-symbol.svg">
+                <img src="static/images/llgg.png">
             </a>
             <p class="share-message">SHARE THE IMAGE</p>
             <div class="h-line"></div>
