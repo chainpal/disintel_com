@@ -9822,6 +9822,7 @@ footer#footer.displayed {
             text-align: center; }
         footer .container .byton-copyrights span {
           width: 33.333%;
+          word-wrap:break-word;
           float: left;
           padding: 0;
           line-height: 1;
