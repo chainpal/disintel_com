@@ -1458,7 +1458,7 @@ header {
     header .navbar-nav li {
       float: left; }
       header .navbar-nav li a {
-        font-size: 12px;
+        font-size: 17px;
         line-height: 2;
         letter-spacing: 2px;
         text-align: left;
@@ -12746,7 +12746,7 @@ footer#footer.displayed {
     background-image: url("../images/roadshow_europe.jpg");
     background-position: bottom center; }
   .index-slider-wrap .square-heading-bg-6 {
-    background-image: url("../images/a.png"); }
+    background-image: url("../images/1a.png"); }
   .index-slider-wrap .square-heading-bg-7 {
     background-image: url("../images/1a.png"); }
   .index-slider-wrap .square-heading-bg-8 {
