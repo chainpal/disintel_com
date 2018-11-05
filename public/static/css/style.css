@@ -1624,7 +1624,7 @@ header {
   padding-top: 81px; }
 
 body:not(.home) main {
-  margin-bottom: 311px;
+  /*margin-bottom: 311px;*/
   z-index: 1; }
 
 body:not(.home) main.page-error {
@@ -1634,13 +1634,13 @@ body:not(.home) main.page-error {
   background-size: cover; }
 
 #footer {
-  position: fixed;
-  z-index: 0 !important;
+  /*position: fixed;*/
+  /*z-index: 0 !important;*/
   bottom: 0;
   display: none; }
 
 body:not(.home) footer {
-  position: fixed;
+  /*position: fixed;*/
   bottom: 0; }
 
 footer {
@@ -3800,7 +3800,7 @@ main.concept span.italic {
   background-position-y: 20px; }
 
 .description-content.concept .poster-background.job2-poster {
-  background-image: url("../images/job2_design_wide.jpg");
+  background-image: url("../images/a7.png");
   background-position-y: 20px; }
 
 .description-content.concept .poster-background.cocreator-poster {
