@@ -290,7 +290,7 @@ select:focus {
 /* Slick Slider
 =============================== */
 .slick-slider {
-  background-color: #ececeb;
+  /*background-color: #ececeb;*/
   width: 100%;
   overflow: hidden; }
 
@@ -3773,7 +3773,7 @@ div.video-wrapper {
     .concept-header.white a.sign-up {
       border: 1px solid #7a7977 !important; }
     .concept-header.white .logo {
-      background: url("../images/header-logo-dark.svg") no-repeat; }
+      background: url("../images/biaoti.png") no-repeat; }
   .concept-header.inivisible {
     opacity: 0;
     visibility: hidden; }
@@ -5339,7 +5339,7 @@ section.team {
   section.team .carousel-inner {
     top: -50px; }
   section.team #team-slider .slick-slider {
-    background-color: #ececeb;
+    /*background-color: #ececeb;*/
     width: 100%;
     float: left;
     overflow: inherit; }
