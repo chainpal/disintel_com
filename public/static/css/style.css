@@ -3523,6 +3523,14 @@ div.cookieinfo {
         right: 15px; }
       #co-creator-slider .slick-arrow.slick-prev {
         left: 15px; } }
+@media (max-width: 768px){
+  .concept{
+    margin-top: -54px;
+  }
+  .concepts{
+    margin-top: -54px;
+  }
+}
 
 .co-creator-cn .description-content div.desc {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 40%); }
